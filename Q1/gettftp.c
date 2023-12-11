@@ -13,7 +13,7 @@ int main(int *argc, char *argv){
     //First we must verify we call the function with the good length of argv, we must have only 3 arguments, the command, the host and the filename
     if(argc != 3){
         printf("Pas le bon nombre d'arguments, il en faut 3, pas un de moins ou de plus");
-        axit(EXIT_FAILURE);
+        exit(EXIT_FAILURE);
     }
     const char *host = argv[1];
     const char *filename = argv[2];
