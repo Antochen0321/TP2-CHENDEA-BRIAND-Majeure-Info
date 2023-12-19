@@ -17,4 +17,19 @@ Dans cette question, nous avons crée la socket de réseau dans la fonction gett
   
 Question 4.1-4.2  
 Nous donnons le code de la question 4.1 à titre indicatif car nous avons changé beaucoup de chose dans la question 4.2 car nous n'avions pas testé notre programme sur le serveur donné sur moodle avant.
-Nous avons crée deux nouvelles structures afin de construire, d'une part la requête de lecture RRQ ainsi que, d'une autre, l'envoi au serveur.
+Nous avons crée deux nouvelles structures afin de construire, d'une part la requête de lecture RRQ ainsi que, d'une autre, l'envoi au serveur.  
+
+
+
+
+
+
+
+Question 5  
+Nous avons fait la fonction puttftp mais nous n'avons pas réussi à aboutir. Dans le code, on peut retrouver la fonction puttftp, très similaire à gettftp dans la forme ainsi que deux fonctions auxiliaires send_wrq ainsi que send_file permettant de déplacer le fichier dans le serveur host. Nous utilisons les trois strucutures codés dans le même fichier, wrq, data et hack. Le fonctionnement est assez proche de celui de gettftp, on peut cependant préciser qu'ici la difficulté était la fonction send_file qui ouvre le fichier que l'on veut mettre dans le serveur, le lit et envoie les données par paquets (dans la boucle while). Voici ce que l'on voit dans la console ainsi que sur wireshark lorsque l'on teste notre code :  
+
+
+
+
+
+Nous n'avons pas eu le temps de corriger le problème cependant, cela semble être une erreur de connexion au serveur donc probablement une mauvaise configuration de la socket
