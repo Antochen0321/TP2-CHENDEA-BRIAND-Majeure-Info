@@ -53,12 +53,6 @@ void send_rrq(int sock, const char *file){
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = htonl(IPPROTO_UDP);
     server_addr.sin_port = htons(1069);
-
-    // Use sendto for send rrq request
-    if (sendto(sock, &rrq, sizeof(rrq), 0, (struct sockaddr*)&server_addr, sizeof(server_addr)) < 0) {
-        perror("Erreur lors de l'envoi de la requête RRQ");
-        exit(EXIT_FAILURE);
-    }
 }
 
 void gettftp(char *host, char *file){
