@@ -71,7 +71,7 @@ void send_file(int sock, const char *filename) {
         }
 
         // Construct data packet
-        data_packet.opcode = htons(3); // DATA opcode
+        data_packet.opcode = htons(3);
         data_packet.block_number = htons(block_number);
 
         // Send data packet to the server
