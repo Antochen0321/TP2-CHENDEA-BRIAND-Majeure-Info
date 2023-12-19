@@ -18,7 +18,8 @@ Dans cette question, nous avons crée la socket de réseau dans la fonction gett
 Question 4.1-4.2  
 Nous donnons le code de la question 4.1 à titre indicatif car nous avons changé beaucoup de chose dans la question 4.2 car nous n'avions pas testé notre programme sur le serveur donné sur moodle avant.
 Nous avons crée deux nouvelles structures afin de construire, d'une part la requête de lecture RRQ ainsi que, d'une autre, l'envoi au serveur.  
-
+Voici ce que l'on peut observer sur wireshark ainsi que sur la console lorsque l'on teste notre code pour différents fichiers. La première image montre que si on ne met as le serveur tftp en écoute sur le port 1069, on ne peut pas s'y connecter. Dans la dernière image, on peut voir que tout fonctionne bien, on arrive a lire le fichier.
+  
 ![Q4-1](screen/Q4-1.png)
   
 ![Q4-2](screen/Q4-2.png)  
@@ -30,4 +31,4 @@ Nous avons fait la fonction puttftp mais nous n'avons pas réussi à aboutir. Da
   
 ![Q5](screen/Q5-2.png)  
   
-Nous n'avons pas eu le temps de corriger le problème cependant, cela semble être une erreur de connexion au serveur donc probablement une mauvaise configuration de la socket
+Nous n'avons pas eu le temps de corriger notre code cependant, on peut constater qu'il y a un problème d'envoi des données, donc probablement une erreur dans notre fonction auxiliaire send_file. Plus précisement, c'est très probablement la construction des paquets de données qui est erronnée. (ligne 73-74 du code de la Q5).
