@@ -19,7 +19,7 @@ Question 4.1-4.2
 Nous donnons le code de la question 4.1 à titre indicatif car nous avons changé beaucoup de chose dans la question 4.2 car nous n'avions pas testé notre programme sur le serveur donné sur moodle avant.
 Nous avons crée deux nouvelles structures afin de construire, d'une part la requête de lecture RRQ ainsi que, d'une autre, l'envoi au serveur.  
 
-
+!['Q4-1'](screen tp/Q4-1.png)
 
 
 
