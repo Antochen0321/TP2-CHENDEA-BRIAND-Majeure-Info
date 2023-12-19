@@ -1,6 +1,6 @@
 # TP2-CHENDEA-BRIAND-Majeure-Info
 Pour le gettftp, nous n'avons pas réussi à faire la question 4.3.  
-Pour le puttftp, nous avons fait un code pour les 5.1 et 5.2 mais il semble qu'il y ait un problème d'accès au dossier destination dans lequel on cherche à mettre un fichier.  
+Pour le puttftp, nous avons fait un code pour les 5.1 et 5.2 mais il semble qu'il y ait un problème au niveau de l'envoi du fichier au serveur.
 
 Question 1  
 Nous avons simplement implémenté la structure générale des deux fonctions que nous utiliserons dans ce TP. 
